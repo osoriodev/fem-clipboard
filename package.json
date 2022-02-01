@@ -1,0 +1,20 @@
+{
+  "name": "fem-clipboard",
+  "version": "1.0.0",
+  "description": "Clipboard landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osoriodev/fem-clipboard.git"
+  },
+  "keywords": [],
+  "author": "David Osorio <osoriodev@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osoriodev/fem-clipboard/issues"
+  },
+  "homepage": "https://github.com/osoriodev/fem-clipboard#readme"
+}

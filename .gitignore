@@ -1,0 +1,17 @@
+# Dependencies installed by npm
+node_modules/
+
+# Parcel's cache folder
+.cache
+
+# Build folder
+dist/
+
+# macOS related files
+.DS_Store
+
+# Others
+design/
+*.sketch
+*.xd
+*.fig
