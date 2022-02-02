@@ -1,0 +1,21 @@
+@use '../utils' as *;
+
+// Basic styles for buttons
+button {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// Basic styles for links
+a {
+  text-decoration: none;
+  color: $clr-base;
+
+  &:hover {
+    text-decoration: underline;
+    color: $clr-primary;
+  }
+}

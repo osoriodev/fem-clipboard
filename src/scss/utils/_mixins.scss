@@ -1,0 +1,14 @@
+// Mixin to manage responsive breakpoints
+
+// 768px, 1024px, 1440px
+$breakpoints: (
+  'small': 48em,
+  'medium': 64em,
+  'large': 90em
+);
+
+@mixin respond-to($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

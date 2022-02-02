@@ -1,0 +1,16 @@
+@use '../utils' as *;
+
+// General typography
+body {
+  color: $clr-base;
+  font-family: $ff-base;
+}
+
+// Heading typography
+h1,
+h2,
+h3 {
+  color: $clr-base-dk;
+  font-weight: 600;
+  line-height: 1.1;
+}
