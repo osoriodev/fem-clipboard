@@ -1,0 +1,44 @@
+@use '../utils' as *;
+
+.header {
+  width: 100%;
+  padding: rem(122) rem(32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url('/assets/img/bg-header-mobile.png') top center / contain no-repeat;
+
+  @include respond-to('small') {
+    padding-top: rem(130);
+    background-image: url('/assets/img/bg-header-desktop.png');
+  }
+
+  &__logo {
+    margin-bottom: rem(64);
+  }
+
+  &__title {
+    margin-bottom: rem(20);
+
+    @include respond-to('small') {
+      font-size: rem(44);
+    }
+  }
+
+  &__desc {
+    width: 100%;
+    max-width: rem(650);
+    margin-bottom: rem(46);
+    letter-spacing: rem(0.1);
+
+    @include respond-to('small') {
+      font-size: rem(18);
+    }
+
+    @include respond-to('large') {
+      max-width: rem(700);
+      font-size: rem(20);
+    }
+  }
+}
