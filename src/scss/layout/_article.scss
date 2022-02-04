@@ -1,0 +1,63 @@
+@use '../utils' as *;
+
+.articles-wrapper {
+  margin-bottom: rem(140);
+
+  @include respond-to('medium') {
+    display: flex;
+    gap: rem(20);
+  }
+}
+
+.article {
+  width: 100%;
+  margin-bottom: rem(54);
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &--workflow {
+    @include respond-to('medium') {
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    min-height: rem(32);
+    margin-bottom: rem(36);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--blacklist {
+      width: rem(44);
+      min-height: rem(40);
+      background-image: url('/assets/img/icon-blacklist.svg');
+
+      @include respond-to('medium') {
+        margin-bottom: rem(28);
+      }
+    }
+
+    &--text {
+      width: rem(36);
+      background-image: url('/assets/img/icon-text.svg');
+    }
+
+    &--preview {
+      width: rem(50);
+      background-image: url('/assets/img/icon-preview.svg');
+    }
+  }
+
+  &__title {
+    font-size: rem(23);
+    margin-bottom: rem(13);
+  }
+
+  &__desc {
+    max-width: rem(350);
+  }
+}

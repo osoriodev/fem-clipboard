@@ -1,0 +1,89 @@
+@use '../utils' as *;
+
+.main {
+  width: 100%;
+  padding: rem(32);
+}
+
+.section {
+  width: 100%;
+  margin-bottom: rem(154);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:nth-child(2) {
+    margin-bottom: rem(80);
+  }
+
+  &__title {
+    margin-bottom: rem(22);
+    font-size: rem(28);
+    letter-spacing: rem(-0.2);
+
+    @include respond-to('small') {
+      font-size: rem(35);
+    }
+  }
+
+  &__desc {
+    max-width: rem(700);
+    margin-bottom: rem(74);
+
+    @include respond-to('small') {
+      margin-bottom: rem(90);
+      font-size: rem(18);
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(60);
+
+    @include respond-to('medium') {
+      flex-direction: row;
+      text-align: start;
+      gap: rem(110);
+    }
+  }
+
+  &__laptop-img {
+    width: 100%;
+    max-width: rem(480);
+
+    @include respond-to('medium') {
+      width: auto;
+      max-width: none;
+      margin-left: rem(-64);
+    }
+  }
+
+  &__logos {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(65);
+
+    @include respond-to('small') {
+      flex-direction: row;
+      gap: rem(96);
+    }
+
+    img {
+      width: 84%;
+      margin: 0 auto;
+
+      @include respond-to('medium') {
+        width: auto;
+      }
+    }
+  }
+}
