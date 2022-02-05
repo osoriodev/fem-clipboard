@@ -1,0 +1,65 @@
+@use '../utils' as *;
+
+.footer {
+  width: 100%;
+  padding: rem(52) rem(52) rem(43);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $clr-helper;
+
+  @include respond-to('medium') {
+    min-height: rem(150);
+    padding: 0 rem(165);
+    flex-direction: row;
+  }
+
+  &__logo {
+    width: rem(55);
+    margin-bottom: rem(42);
+
+    @include respond-to('medium') {
+      margin: 0;
+    }
+  }
+
+  &__links {
+    margin: 0 0 rem(45);
+    display: grid;
+    justify-items: center;
+    gap: rem(23);
+
+    @include respond-to('small') {
+      grid-template-rows: repeat(2, auto);
+      grid-auto-columns: rem(120);
+      grid-auto-flow: column;
+      justify-items: start;
+      column-gap: rem(70);
+      row-gap: rem(15);
+    }
+
+    @include respond-to('medium') {
+      margin: 0 0 0 rem(134);
+    }
+
+    a {
+      font-size: rem(18);
+    }
+  }
+
+  &__social {
+    margin: 0;
+    display: flex;
+    gap: rem(40);
+
+    @include respond-to('medium') {
+      gap: rem(24);
+      margin-left: auto;
+    }
+
+    a {
+      font-size: rem(24);
+      text-decoration: none;
+    }
+  }
+}
